@@ -38,6 +38,7 @@
             src="{{mars.featured_image }}"
             class="img-responsive"
             alt="Responsive image"
+            width = "300" height="300"
           />
         </div>
         <div class="col-md-4">
@@ -55,11 +56,11 @@
             <!--col-md-3 col-sm-6 sets the break points for resizing the web page-->
             <div class="col-md-3 col-sm-6"> <!--Deliverable 3 Requirment-->
               <a href={{ hemisphere.img_url }}>
-                <div class="text-center">
-                  <h6>{{ hemisphere.title }}</h6>
-                </div>
                 <!--Designating images to be thumbnails and image responsive Del 3 Requirement-->
                   <img class="img-thumbnail img-rounded" class="img-responsive" src="{{ hemisphere.img_url }}"></img>
+                  <div class="text-center">
+                    <h5>{{ hemisphere.title }}</h5>
+                  </div>
               </a>
             </div>
           {% endfor %}  
